@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-0.9.80">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Lecture 4 Exercises</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+
+  <script src="l4_files/libs/clipboard/clipboard.min.js"></script>
+  <script src="l4_files/libs/quarto-html/quarto.js"></script>
+  <script src="l4_files/libs/quarto-html/popper.min.js"></script>
+  <script src="l4_files/libs/quarto-html/tippy.umd.min.js"></script>
+  <script src="l4_files/libs/quarto-html/anchor.min.js"></script>
+  <link href="l4_files/libs/quarto-html/tippy.css" rel="stylesheet">
+  <link href="l4_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <script src="l4_files/libs/bootstrap/bootstrap.min.js"></script>
+  <link href="l4_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <link href="l4_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body class="fullcontent">
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+<header id="title-block-header" class="quarto-title-block default">
+
+<div class="quarto-title"><h1 class="title display-7">Lecture 4 Exercises</h1></div></header>
+<section id="r-project" class="level2">
+<h2 class="anchored" data-anchor-id="r-project">R Project</h2>
+<p>If you’re using RStudio, you have the option of creating a new R project. A project is simply a working directory designated with a .RProj file. When you open a project (using File/Open Project in RStudio or by double–clicking on the .Rproj file outside of R), the working directory will automatically be set to the directory that the .RProj file is located in.</p>
+<p>It’s recommended to create a new R Project whenever you are starting a new research project. Once you’ve created a new R project, you should immediately create folders in the directory which will contain your R code, data files, notes, and other material relevant to your project (you can do this outside of R on your computer, or in the Files window of RStudio). For example, you could create a folder called R that contains all of your R code, a folder called data that contains all your data (etc.)</p>
+<p>R in combination with the distributed version control system Git provides a convenient setup to make your research project reproducible. Git allows you to track and share your code and analysis.</p>
+<p>Some reasons to use version control are:</p>
+<ul>
+<li><p>It makes sharing of your projects easy (once it’s setup, you’ll get there)</p></li>
+<li><p>It facilitates collaboration. People can contribute to your project and vice-versa. You can also report errors (bugs) or suggest new additions (features) to projects.</p></li>
+<li><p>You can revert to a previous version if you find errors or accidentally deleted something.</p></li>
+<li><p>You can see what changes between different versions of your code, analysis, or written text!</p></li>
+</ul>
+<p><strong>RStudio integrates support for git, hence we are going to use the widely used combination R + Git + RStudio.</strong></p>
+</section>
+<section id="before-we-start" class="level2">
+<h2 class="anchored" data-anchor-id="before-we-start">Before we start</h2>
+<ol type="1">
+<li><p>Setup Git (Only if you didn’t do it yet!)</p></li>
+<li><p>Setup Git in RStudio.</p></li>
+<li><p>Create a new GitHub repository.</p></li>
+<li><p>Create a new project based on a remote Git repository.</p></li>
+</ol>
+</section>
+<section id="before-we-start-guide" class="level2">
+<h2 class="anchored" data-anchor-id="before-we-start-guide">Before we start guide</h2>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section">1.</h3>
+<p>Setup Git:</p>
+<p>Configure Git and set your user name and email (the email address you used to register on GitHub). You can directly open the Git prompt from within RStudio. The user name and email need to be set only once. Go to Tools &gt; Bash to open the Git Bash to tell Git your username and GitHub email.</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>git config <span class="sc">--</span>global user.name <span class="st">'yourGitHubUsername'</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>git config <span class="sc">--</span>global user.email <span class="st">'name@provider.com'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="section-1" class="level3">
+<h3 class="anchored" data-anchor-id="section-1">2.</h3>
+<p>Setup Git in RStudio:</p>
+<p>Open RStudio and go to Tools &gt; Global Options… click on Git/SVN.</p>
+<p>Check Enable version control interface for RStudio projects.</p>
+<p>Set the path to the Git executable that you just installed. Open a shell, if you don’t know where Git is installed. Windows: type where git and hit enter. The path should be something like: C:/Program Files (x86)/Git/bin/git.exe Linux/OS X: type which git and hit enter. The path should be something like: /usr/bin/git.</p>
+<p>Restart RStudio.</p>
+</section>
+<section id="section-2" class="level3">
+<h3 class="anchored" data-anchor-id="section-2">3.</h3>
+<p>Create a new GitHub repository:</p>
+<p>Login to your GitHub account and create a new GitHub repository. Give your new repository a short and memorable name e.g.&nbsp;l4_ADS.</p>
+</section>
+<section id="section-3" class="level3">
+<h3 class="anchored" data-anchor-id="section-3">4.</h3>
+<p>Create a new project based on a remote Git repository:</p>
+<p>Select File &gt; New Project.. and from the opening menu select to create a new project from Version Control, Choose Git, then provide the repository url (use the https link of the url if you want to avoid all the ssh trouble) from the repository you want to clone and create the project.</p>
+</section>
+</section>
+<section id="question-1" class="level2">
+<h2 class="anchored" data-anchor-id="question-1">Question 1</h2>
+<p>Open a new Quarto Document in Rstudio. (By default, Rmarkdown will present a sample code to show. Delete all the code in the Quarto Document.)</p>
+<p>Insert a YAML Header with title, author and date at the top of your .qmd script.</p>
+</section>
+<section id="asnwer-1" class="level2">
+<h2 class="anchored" data-anchor-id="asnwer-1">Asnwer 1</h2>
+<p>Open new Quarto file in Rstudio by going to</p>
+<p>File -&gt; New File -&gt; Quarto Document</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"My first Quatro"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>author<span class="sc">:</span> test </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>date<span class="sc">:</span> <span class="dv">1</span>.<span class="fl">1.1970</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span> html</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>editor<span class="sc">:</span> visual</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="question-2" class="level2">
+<h2 class="anchored" data-anchor-id="question-2">Question 2</h2>
+<p>Insert a code chunk in 3 different ways.</p>
+</section>
+<section id="answer-2" class="level2">
+<h2 class="anchored" data-anchor-id="answer-2">Answer 2</h2>
+<ol type="1">
+<li><p>‘CTRL’ + ‘ALT’ + ‘I’.</p></li>
+<li><p>The Add Chunk command in the editor toolbar .</p></li>
+<li><p>By typing the chunk delimiters {r} and `.</p></li>
+</ol>
+</section>
+<section id="question-3" class="level2">
+<h2 class="anchored" data-anchor-id="question-3">Question 3</h2>
+<p>Create a header with the following text: Quarto is cool!</p>
+<p>Add acode chunk with the following code:</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dotchart</span>(mtcars<span class="sc">$</span>mpg,<span class="at">labels=</span><span class="fu">row.names</span>(mtcars),<span class="at">cex=</span>.<span class="dv">7</span>,</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">main=</span><span class="st">"Gas Milage for Car Models"</span>, </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>          <span class="at">xlab=</span><span class="st">"Miles Per Gallon"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="answer-3" class="level2">
+<h2 class="anchored" data-anchor-id="answer-3">Answer 3</h2>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Inside a new code block write the following code<span class="sc">:</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="do">##  Quarto is cool! </span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">dotchart</span>(mtcars<span class="sc">$</span>mpg,<span class="at">labels=</span><span class="fu">row.names</span>(mtcars),<span class="at">cex=</span>.<span class="dv">7</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>          <span class="at">main=</span><span class="st">"Gas Milage for Car Models"</span>, </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>          <span class="at">xlab=</span><span class="st">"Miles Per Gallon"</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="quarto-is-cool" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-is-cool">Quarto is cool!</h2>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="l4_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="question-4" class="level2">
+<h2 class="anchored" data-anchor-id="question-4">Question 4</h2>
+<p>What does every of the below chunk options mean?</p>
+<p>You can apply the different options on the dot chart from the previous question.</p>
+<p>(example: ```{r,echo=FALSE} )</p>
+<p>A. <code>echo=FALSE</code></p>
+<p>B. <code>echo=TRUE</code></p>
+<p>C. <code>include=FALSE</code></p>
+<p>D. <code>eval=FALSE, include=FALSE</code></p>
+</section>
+<section id="answer-4" class="level2">
+<h2 class="anchored" data-anchor-id="answer-4">Answer 4</h2>
+<div class="cell">
+<div class="sourceCode" id="cb5"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># echo=FALSE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The echo gives us the option if to display code along with its results or not, in this option the code will not be shown.</p>
+<div class="cell">
+<div class="sourceCode" id="cb6"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># echo=TRUE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The echo gives us the option if to display code along with its results or not, in this option the code will be shown.</p>
+<div class="cell">
+<div class="sourceCode" id="cb7"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># include=FALSE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The include gives us the option if to include the chunk in the document after running it. in this option the chunk it will not be included.</p>
+<div class="cell">
+<div class="sourceCode" id="cb8"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># eval=FALSE, include=FALSE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The eval gives us the option if to evaluate the code and include its results, The include gives us the option if to include the chunk in the document after running it. In this case the the code will not be evaluated and included in the result, and also the chunk will not be in included in the document.</p>
+</section>
+<section id="question-5" class="level2">
+<h2 class="anchored" data-anchor-id="question-5">Question 5</h2>
+<p>A. Create a sentence with next parameters:</p>
+<p>Your first name in <em>italics</em> format.</p>
+<p>Your last name in <strong>bold</strong>.</p>
+<p>Your id number in <code>code</code> format.</p>
+<p>Link to our univercity website.</p>
+<p><strong>This is my example:</strong></p>
+<p><em>Jakob</em> <strong>Alderson</strong> <code>123465789</code> <a href="https://in.bgu.ac.il/Pages/default.aspx">BGU</a></p>
+</section>
+<section id="answer-5" class="level2">
+<h2 class="anchored" data-anchor-id="answer-5">Answer 5</h2>
+<div class="cell">
+<div class="sourceCode" id="cb9"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span>Jakob<span class="sc">*</span> <span class="er">**</span>Alderson<span class="sc">**</span> <span class="st">`</span><span class="at">123465789</span><span class="st">`</span> [BGU](https<span class="sc">:</span><span class="er">//</span>in.bgu.ac.il<span class="sc">/</span>Pages<span class="sc">/</span>default.aspx)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="question-6" class="level2">
+<h2 class="anchored" data-anchor-id="question-6">Question 6</h2>
+<p>Commit the changes to your git hub repository.</p>
+<p>Push to the remote repository.</p>
+</section>
+<section id="answer-6" class="level2">
+<h2 class="anchored" data-anchor-id="answer-6">Answer 6</h2>
+<section id="commit-the-changes-to-your-git-hub-repository" class="level3">
+<h3 class="anchored" data-anchor-id="commit-the-changes-to-your-git-hub-repository">Commit the changes to your git hub repository</h3>
+<p>Now we commit the local changes to the local Git repository. In RStudio press the Git icon and select Commit.. from Git menu (Ctrl+Alt+M) to open the commit window to review the changes in the repository. In the Staged column we select by checking the checkbox the files we want to commit. The lower pane shows the edits in green and red of the file. Enter a commit message to indicate what has changed in this commit e.g.&nbsp;“First Commit”and press the Commit button.</p>
+</section>
+<section id="push-to-the-remote-repository" class="level3">
+<h3 class="anchored" data-anchor-id="push-to-the-remote-repository">Push to the remote repository</h3>
+<p>To push the changes to the remote GitHub repository press the Push button on the upper right corner of the commit window. You will be prompted to enter the username and password of your GitHub account. Enter them and check on the GitHub page if the changes got pushed to your online repository on GitHub.</p>
+</section>
+</section>
+<section id="bonus-reading" class="level2">
+<h2 class="anchored" data-anchor-id="bonus-reading">Bonus Reading</h2>
+<p>Those who want to further expand their knowledge of all the possibilities in Quarto, are invited to read and explore the following website:</p>
+<p>https://quarto.org/docs/authoring/markdown-basics.html</p>
+</section>
+</main>
+<!-- /main column -->
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    setTimeout(function() {
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+</body></html>
